@@ -9,8 +9,8 @@
 <body>
   <div class="container">
     <div id="question-1">
-      <div class="alert alert-danger wrong-msg">Wrong! Try again.</div>
-      <div class="alert alert-success correct-msg">Good job! You've masted basic arithmetic.</div>
+      <div class="wrong" class="alert alert-danger wrong-msg">Wrong! Try again.</div>
+      <div class="right" class="alert alert-success correct-msg">Good job! You've masted basic arithmetic.</div>
       <div class="question">
         <h3 class="question">What is 5 + 5?</h3>
         <a class="btn btn-default btn-lg btn-right">10</a>
@@ -20,7 +20,8 @@
     </div>
   </div>
   <script>
-    /* Your code goes here */
+    $(".wrong").hide()
+    $(".right").hide()
   </script>
 </body>
 </html>
