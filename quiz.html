@@ -28,6 +28,15 @@
     $(".btn-wrong").click(function() {
       $(".wrong-msg").slideDown();
       });
+    $(".btn-wrong").click(function() {
+      $(".correct-msg").hide();
+    });
+    $(".btn-right").click(function() {
+      $(".wrong-msg").hide();
+    });
+    $(".btn").on('hover', function() {
+      $(this).fadeOut();
+    });
   </script>
 </body>
 </html>
