@@ -34,8 +34,9 @@
     $(".btn-right").click(function() {
       $(".wrong-msg").hide();
     });
-    $(".btn").on('hover', function() {
-      $(this).fadeOut();
+    $(".btn").hover(function() {
+      $(".btn").removeClass("active");
+      $(this).addClass("active");
     });
   </script>
 </body>
